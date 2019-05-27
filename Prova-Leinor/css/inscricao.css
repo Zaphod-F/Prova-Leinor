@@ -1,0 +1,66 @@
+legend,
+label[for="mensagem"] {
+    font-weight: bold;
+    margin-top: 1em;
+}
+label[for],
+button {
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    padding: .25em .5em;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+button {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.25em;
+    background-color: #10487B;
+    color: #FFF;
+    padding: .5em;
+    width: 40ch;
+    margin: 2em auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: .5s;
+}
+
+input:invalid {
+    box-shadow: 0 0 3px red;
+}
+input:focus,
+textarea:focus {
+    background-color: #FFD;
+}
+button:focus {
+    background-color: black;
+}
+input[value="Outro"] + input {
+    display: none;
+}
+input[value="Outro"]:checked + input {
+    display: block;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    text-shadow: 3px 3px #000;
+}
+
+.titulo-principal {
+    text-align: center;
+    background-color: #10487B;
+    color: #FFF;
+    padding: 1rem;
+}
+
+h2 {
+font-size: 2em;    
+}
