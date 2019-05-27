@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Inscreva-se - Compasso Labs</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/inscricao.css">
+</head>
+<body>
+    <main>
+        <h1 class="titulo-principal">Inscreva-se</h1>
+        <div class="container">
+            <form>
+                <fieldset>
+                    <legend>Faça parte deste time inscrevendo-se na próxima edição do programa de bolsas.</legend>
+                    <label for="nome">Nome completo</label>
+                    <input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" required placeholder="seu@email.com">
+                </fieldset>
+                <fieldset>
+                    <legend>Maior disponibilidade</legend>
+                    <label>
+                        <input type="radio" name="disponibilidade" value="Manha">
+                        Manhã
+                    </label>
+                    <label>
+                        <input type="radio" name="disponibilidade" value="Tarte">
+                        Tarde
+                    </label>
+                    <label>
+                        <input type="radio" name="disponibilidade" value="Noite">
+                        Noite
+                    </label>
+                    <label>
+                        <input type="radio" name="disponibilidade" value="Personalizar">
+                        Personalizar
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Interesses</legend>
+                    <label>
+                        <input type="checkbox" name="disponibilidade" value="checkia">
+                        IA
+                    </label>
+                    <label>
+                        <input type="checkbox" name="disponibilidade" value="checkbd">
+                        Big Data
+                    </label>
+                    <label>
+                        <input type="checkbox" name="disponibilidade" value="checkml">
+                        Machine Learning
+                    </label>
+                    <label>
+                        <input type="checkbox" name="disponibilidade" value="checkoutro">
+                        Outro
+                    </label>
+                </fieldset>
+                <label for="mensagem">Porque você quer participar?</label>
+                <textarea id="mensagem" name="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </div>
+    </main>
+    <footer id="rodape">
+            <h2>Compasso Tecnologia LTDA</h2>
+                <a href="inscricao.html">Contato</a>
+                <a href="index.html">Sobre</a>
+                <a href="">Link</a>
+        </footer>
+    </body>
+</html>
