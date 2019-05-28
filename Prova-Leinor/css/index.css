@@ -31,18 +31,26 @@ font-size: 2em;
     display: block;
     text-align: center;
     text-decoration: none;
+    border: 1px solid transparent;
 }
 
 .botao-facaparte {
     font-size: 1.25em;
     background-color: #FFF;
-    color: #10487B;
+    color: #000;
     padding: .5em;
     width: 40ch;
     margin: 2em auto;
     display: block;
     text-align: center;
     text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.botao-facaparte:hover {
+    color: black;
+    border: 1px solid #000;
+    background-color: skyblue;
 }
 
 .labs {
@@ -53,12 +61,15 @@ font-size: 2em;
     background-color: #10487B;
     border-top: .5em solid #000;
     border-bottom: .5em solid #000;
-    background-size: 40px 40px;
+    background-size: 20px 20px;
+    background-attachment: fixed;
+    padding: 2em;
 }
 .vertentes h2 {
     color: #FFF;
     text-align: center;
     font-size: 4em;
+    padding-bottom: 1em;
 }
 .vertentes ul {
     display: -webkit-flex;
@@ -70,23 +81,24 @@ font-size: 2em;
 }
 .vertentes li:first-child {
     order: 3;
-    width: 30%;
-    height: auto;
 }
 .vertentes li:nth-child(2) {
     order: 2;
-    width: 40%;
-    height: auto;
+    transform: scale(1.2);
 }
 .vertentes li:nth-child(3) {
     order: 1;
-    width: 30%;
-    height: auto;
 }
 .vertentes img {
-    width: 100%;
+    width: 30em;
+    height: 15em;
     display: block;
-    border: .5em solid black;
+    border: .5em solid #000;
+}
+
+.vertentes img:hover{
+    border: .5em solid pink;
+    transform: scale(1.3);
 }
 
 footer {
