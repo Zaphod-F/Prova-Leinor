@@ -13,13 +13,13 @@
     <main>
         <h1 class="titulo-principal">Inscreva-se</h1>
         <div class="container">
-            <form>
+            <form id="formulario">
                 <fieldset>
                     <legend>Faça parte deste time inscrevendo-se na próxima edição do programa de bolsas.</legend>
                     <label for="nome">Nome completo</label>
-                    <input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+                    <input id="nome" type="text" name="nome"  autofocus>
                     <label for="email">E-mail</label>
-                    <input id="email" type="email" name="email" required placeholder="seu@email.com">
+                    <input id="email" type="email" name="email" placeholder="seu@email.com">
                 </fieldset>
                 <fieldset>
                     <legend>Maior disponibilidade</legend>
@@ -37,31 +37,30 @@
                     </label>
                     <label>
                         <input type="radio" name="disponibilidade" value="Personalizar">
-                        Personalizar
                     </label>
                 </fieldset>
                 <fieldset>
                     <legend>Interesses</legend>
                     <label>
-                        <input type="checkbox" name="disponibilidade" value="checkia">
+                        <input type="checkbox" name="interesses" value="checkia">
                         IA
                     </label>
                     <label>
-                        <input type="checkbox" name="disponibilidade" value="checkbd">
+                        <input type="checkbox" name="interesses" value="checkbd">
                         Big Data
                     </label>
                     <label>
-                        <input type="checkbox" name="disponibilidade" value="checkml">
+                        <input type="checkbox" name="interesses" value="checkml">
                         Machine Learning
                     </label>
                     <label>
-                        <input type="checkbox" name="disponibilidade" value="checkoutro">
+                        <input type="checkbox" name="interesses" value="checkoutro">
                         Outro
                     </label>
                 </fieldset>
                 <label for="mensagem">Porque você quer participar?</label>
                 <textarea id="mensagem" name="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
-                <button type="submit">ENVIAR MENSAGEM</button>
+                <button type="submit" id="bt-enviar-mensagem">ENVIAR MENSAGEM</button>
             </form>
         </div>
     </main>
@@ -80,5 +79,6 @@
         </ul>               
                 
         </footer>
+    <script src="validaform.js"></script>
     </body>
 </html>

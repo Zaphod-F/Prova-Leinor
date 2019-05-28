@@ -19,6 +19,13 @@ h1 {
     text-shadow: 3px 3px #000;
 }
 
+.container {
+    width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em 0;
+}
+
 .titulo-principal {
     text-align: center;
     background-color: #10487B;
@@ -32,7 +39,6 @@ h1 {
 }
 
 main a:focus,
-footer a:focus,
 main a:hover {
     color: black;
     border: 1px solid #000;
