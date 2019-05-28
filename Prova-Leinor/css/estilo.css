@@ -31,10 +31,6 @@ h1 {
     clear: both;
 }
 
-main a {
-    color: #851944;
-}
-
 main a:focus,
 footer a:focus,
 main a:hover {
@@ -64,21 +60,6 @@ main p {
     text-shadow: 1px 1px black;
     background-color: black;
     background-size: 25% 100%;
-}
-
-.container {
-    width: 80ch;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em 0;
-}
-
-strong {
-    font-weight: bold;
-}
-
-em {
-    font-style: italic;
 }
 
 main {

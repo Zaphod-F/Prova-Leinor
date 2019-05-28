@@ -14,7 +14,7 @@ body {
 
 .texto-do-corpo p{
     padding-bottom: 4em;
-    border-bottom: .1em solid #000;
+    border-bottom: .1ch solid #000;
 }
 
 h2 {
@@ -97,7 +97,7 @@ font-size: 2em;
 }
 
 .vertentes img:hover{
-    border: .5em solid pink;
+    border: .5em solid skyblue;
     transform: scale(1.3);
 }
 
