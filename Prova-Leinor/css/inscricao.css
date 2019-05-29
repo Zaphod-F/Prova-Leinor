@@ -1,7 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
-
 legend,
 label[for="mensagem"] {
     font-weight: bold;
@@ -66,5 +65,5 @@ h1 {
 }
 
 h2 {
-font-size: 2em;    
+font-size: 2em;
 }

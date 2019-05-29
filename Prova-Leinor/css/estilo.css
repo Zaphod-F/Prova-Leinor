@@ -66,6 +66,7 @@ main p {
     text-shadow: 1px 1px black;
     background-color: black;
     background-size: 25% 100%;
+    position: relative;
 }
 
 main {

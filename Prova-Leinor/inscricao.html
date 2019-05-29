@@ -24,20 +24,23 @@
                 <fieldset>
                     <legend>Maior disponibilidade</legend>
                     <label>
-                        <input type="radio" name="disponibilidade" value="Manha">
+                        <input type="radio" name="disponibilidade" value="Manha" class="disponibilidade">
                         Manhã
                     </label>
                     <label>
-                        <input type="radio" name="disponibilidade" value="Tarte">
+                        <input type="radio" name="disponibilidade" value="Tarde" class="disponibilidade">
                         Tarde
                     </label>
                     <label>
-                        <input type="radio" name="disponibilidade" value="Noite">
+                        <input type="radio" name="disponibilidade" value="Noite" class="disponibilidade">
                         Noite
                     </label>
                     <label>
-                        <input type="radio" name="disponibilidade" value="Personalizar">
+                        <input type="radio" name="disponibilidade" value="Personalizar" class="disponibilidade" id="radper">
+                        Personalizar
                     </label>
+
+                    <input type="text" name="disponibilidade" id="personalizar" hidden>
                 </fieldset>
                 <fieldset>
                     <legend>Interesses</legend>
@@ -54,14 +57,19 @@
                         Machine Learning
                     </label>
                     <label>
-                        <input type="checkbox" name="interesses" value="checkoutro">
+                        <input type="checkbox" name="interesses" value="checkoutro" id="outro">
                         Outro
                     </label>
+                    <input type="text" name="interesses" value="" id="outroCampo" hidden>
                 </fieldset>
                 <label for="mensagem">Porque você quer participar?</label>
                 <textarea id="mensagem" name="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
                 <button type="submit" id="bt-enviar-mensagem">ENVIAR MENSAGEM</button>
             </form>
+        </div>
+        <div id="depois-form" class="depois-enviado container" hidden>
+          <p>Inscrição enviada. Aguarde novos detalhes em seu e-mail</p>
+          <a href"inscricao.html">fazer outra inscrição</a>
         </div>
     </main>
     <footer class="rodape-pagina">
@@ -76,9 +84,11 @@
             <li>
             <a href="">Link</a>
             </li>
-        </ul>               
-                
+        </ul>
+
         </footer>
+        <script src="jquery.js"></script>
     <script src="validaform.js"></script>
+
     </body>
 </html>
